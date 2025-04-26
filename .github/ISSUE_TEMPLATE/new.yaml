@@ -15,8 +15,10 @@ body:
     description: submit a url that has information about assistive technology.
     required: true
   - type: markdown
-    label: description
     description: add an optional description about the submission you are making
+    required: false
   - type: textarea
     label: related urls 
     description: add a line separated list of other urls relevent to this item
+    required: false
+    
