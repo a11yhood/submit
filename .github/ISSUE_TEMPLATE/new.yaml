@@ -11,14 +11,15 @@ assignees:
   - jmankoff
 body:
   - type: input
-    label: url
-    description: submit a url that has information about assistive technology.
-    required: true
+    attributes:
+      label: url
+      description: submit a url that has information about assistive technology.
+    validations:
+      required: true
   - type: markdown
     description: add an optional description about the submission you are making
-    required: false
   - type: textarea
-    label: related urls 
-    description: add a line separated list of other urls relevent to this item
-    required: false
+    attributes:
+      label: related urls 
+      description: add a line separated list of other urls relevent to this item
     
