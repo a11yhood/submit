@@ -17,7 +17,8 @@ body:
     validations:
       required: true
   - type: markdown
-    description: add an optional description about the submission you are making
+    attributes:
+      value: add an optional description about the submission you are making
   - type: textarea
     attributes:
       label: related urls 
