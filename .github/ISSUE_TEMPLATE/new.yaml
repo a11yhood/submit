@@ -1,6 +1,6 @@
 name: Add an item
 description: Add an entry to the a11yhood assistive technology dataset
-title: "[New]: "
+title: "[New AT]: "
 labels: 
 - new
 - assistive-technology
@@ -11,15 +11,20 @@ assignees:
   - jmankoff
 body:
   - type: input
+    id: url
     attributes:
       label: url
       description: submit a url that has information about assistive technology.
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: add an optional description about the submission you are making
   - type: textarea
+    id: description
+    attributes:
+      label: description
+      description: optional information about the AT submission you are making
+      placeholder: enter any text in a markdown format to describe the submission
+  - type: textarea
+    id: extra_urls
     attributes:
       label: related urls 
       description: add a line separated list of other urls relevent to this item
